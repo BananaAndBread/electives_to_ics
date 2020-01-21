@@ -8,6 +8,7 @@ __Steps to run the script__
 2) Run to install requiremets:
 
 `pip install -r requirements.txt`
+
 3) Run the script:
 
 `python parser.py`
