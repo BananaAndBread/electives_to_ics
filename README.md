@@ -1,9 +1,11 @@
 # Electives to ICS
 
-__Requirements:__
+#### Requirements:
+
 * python>=3.6.0
 
-__Steps to run the script__
+#### Steps to run the script
+
 1) Enter the folder
 2) Run to install requiremets:
 
@@ -27,7 +29,14 @@ Finally, you should get a message:
 ![image](https://user-images.githubusercontent.com/32180157/72827438-d7fca180-3c8b-11ea-8cd9-d7eec3d702c4.png)
 
 
+4) Enjoy the Electives.ics file
+
+![image](https://user-images.githubusercontent.com/32180157/72827694-522d2600-3c8c-11ea-8b44-a1ad10fd6e1b.png)
+
+
 
 If something is wrong, please contact @BananaAndBread via telegram
+
+
 
 
