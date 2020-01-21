@@ -46,10 +46,10 @@ print("Choose electives from the list")
 print("(As an example, if you want to choose"
       " 'Advanced agile software design' and 'Economics of Entrepreneurship' "
       "type '3,6') ")
-print("Waiting for the input ...")
+
 for i in range(3, len(first_row)):
     print(f"{i-2}) {first_row[i]}")
-
+print("Waiting for the input ...")
 chosen_electives = input()
 chosen_electives = chosen_electives.split(",")
 electives = [first_row[int(i)+2] for i in chosen_electives]
