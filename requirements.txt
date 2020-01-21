@@ -1,0 +1,6 @@
+ics==0.6
+openpyxl==3.0.3
+pyexcel==0.5.15
+pyexcel-xlsx==0.5.8
+requests==2.22.0
+
