@@ -3,6 +3,7 @@ from datetime import datetime
 from ics import Calendar, Event
 import pyexcel
 import requests
+import pytz
 
 
 def download_spreadsheet():
@@ -61,9 +62,12 @@ for i in sheet:
         if i[0]!="":
             if isinstance(i[0], datetime):
                 date_object= i[0]
+                date_object = date_object.replace(day = date_object.month, month=date_object.day)
             else:
                 temp = str(i[0]).split(" ")[0]
                 date_object = datetime.strptime(temp, '%d/%m/%Y')
+        timezone = pytz.timezone("Europe/Moscow")
+        date_object = date_object.replace(tzinfo=timezone)
 
         electives_found = find_electives_in_row(electives_columns, i)
         if electives_found:
@@ -80,8 +84,10 @@ for i in sheet:
                 e.name = elective["name"]
                 e.description = elective["description"]
                 e.begin = begin
+
                 e.end = end
                 c.events.add(e)
+
 
 
 print("You have chosen the following electives:")
